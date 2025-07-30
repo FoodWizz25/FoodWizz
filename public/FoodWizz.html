@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>FoodWIZZ - Smart Food Inventory Management</title>
+    <!-- Descripción de la página -->
+    <meta name="description" content="Revolutionary food inventory management software for restaurants and food businesses. Easy inventory, maximum profits.">
+    <!-- Preconecta a Google Fonts para cargar las fuentes más rápido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa las fuentes Poppins e Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Importa Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="Imagenes/logos/IconoNaranja_Transp.svg" type="image/x-icon">
+</head>
+<body>
+    <!-- Fondo animado con formas flotantes -->
+    <div class="animated-bg">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Contenedor del logo -->
+            <div class="logo-container">
+                <div class="logo-3d">
+                    <img src="/public/Imagenes/logos/logo_N.svg" alt="">
+                    <div class="logo-glow"></div>
+                </div>
+            </div>
+
+            <!-- Enlaces de navegación -->
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        <span class="nav-text">Home</span>
+                        <div class="nav-hover-effect"></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <span class="nav-text">About Us</span>
+                        <div class="nav-hover-effect"></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#software" class="nav-link">
+                        <span class="nav-text">Software</span>
+                        <div class="nav-hover-effect"></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link signup-btn">
+                        <span class="nav-text">Sign Up</span>
+                        <div class="signup-glow"></div>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Menú móvil -->
+            <div class="mobile-menu" id="mobileMenu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="home" class="hero">
+        <span style="font-size: 100px; color: white; font-style: italic;">Espacio a editar</span>
+        <!-- <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Insignia de tecnología revolucionaria -->
+                <!-- <div class="hero-badge">
+                    <i class="fas fa-magic"></i>
+                    <span>Revolutionary Technology</span>
+                </div>
+                <!-- Título principal -->
+                <!-- <h1 class="hero-title">
+                    <span class="title-line">Our software</span>
+                    <span class="title-line highlight">revolutionizes</span>
+                    <span class="title-line">food inventory management</span>
+                </h1>
+                <!-- Subtítulo -->
+                <!-- <p class="hero-subtitle">Say goodbye to the stress of manual counts and losses from expired products.</p>
+                <!-- Eslogan -->
+                <!-- <div class="hero-tagline">
+                    <span class="tagline-text">Easy Inventory,</span>
+                    <span class="tagline-highlight">Maximum Profits</span>
+                </div>
+                <!-- Botones de llamada a la acción -->
+                <!-- <div class="hero-buttons">
+                    <a href="#contact" class="cta-primary">
+                        <span>Get Started Today</span>
+                        <i class="fas fa-rocket"></i>
+                        <div class="button-glow"></div>
+                    </a>
+                    <a href="#software" class="cta-secondary">
+                        <span>Watch Demo</span>
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visual del hero -->
+            <!-- <div class="hero-visual">
+                <div class="floating-dashboard">
+                    <!-- Tarjetas del dashboard -->
+                    <!-- <div class="dashboard-card card-1">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>Analytics</h4>
+                            <p>Real-time insights</p>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <div class="dashboard-card card-2">
+                        <div class="card-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>Food Items</h4>
+                            <p>Smart tracking</p>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <div class="dashboard-card card-3">
+                        <div class="card-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>Cloud Storage</h4>
+                            <p>Secure & accessible</p>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <div class="dashboard-card card-4">
+                        <div class="card-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>Mobile Ready</h4>
+                            <p>Anywhere, anytime</p>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <!-- Orb central -->
+                    <!-- <div class="central-orb">
+                        <div class="orb-inner">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="orb-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </section>
+
+    <!-- Sección "What We Offer" -->
+    <section class="section what-we-offer">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-decoration"></span>
+                    What We Offer
+                    <span class="title-decoration"></span>
+                </h2>
+                <p class="section-subtitle">Transform your business with cutting-edge inventory solutions</p>
+            </div>
+
+            <!-- Cuadrícula de características -->
+            <div class="features-grid">
+                <div class="feature-card card-hover-3d">
+                    <div class="feature-icon-container">
+                        <div class="feature-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Cost Savings</h3>
+                    <p>It eliminates the stress of manual counts and expired products, directly translating to money saved, less waste, and smarter purchasing.</p>
+                    <div class="card-shine"></div>
+                </div>
+
+                <div class="feature-card card-hover-3d">
+                    <div class="feature-icon-container">
+                        <div class="feature-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Always Stocked</h3>
+                    <p>Always have what you need to keep your business rolling without surprises.</p>
+                    <div class="card-shine"></div>
+                </div>
+
+                <div class="feature-card card-hover-3d">
+                    <div class="feature-icon-container">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Smart Analytics</h3>
+                    <p>Enhance inventory management with strategic data reports and intelligent insights.</p>
+                    <div class="card-shine"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "How We Help" -->
+    <section class="section how-we-help">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How We Help</h2>
+                <p class="section-subtitle">Empowering your business with intelligent solutions</p>
+            </div>
+
+            <!-- Cuadrícula de ayuda -->
+            <div class="help-grid">
+                <div class="help-card glass-morphism">
+                    <div class="help-number">01</div>
+                    <div class="help-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Strategic Data Reports</h3>
+                    <p>Enhance inventory management with strategic data reports that provide actionable insights for your business.</p>
+                    <div class="card-glow-effect"></div>
+                </div>
+
+                <div class="help-card glass-morphism">
+                    <div class="help-number">02</div>
+                    <div class="help-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automated Inventory</h3>
+                    <p>Automate food inventory for maximum efficiency and eliminate manual tracking errors.</p>
+                    <div class="card-glow-effect"></div>
+                </div>
+
+                <div class="help-card glass-morphism">
+                    <div class="help-number">03</div>
+                    <div class="help-icon">
+                        <i class="fas fa-trending-up"></i>
+                    </div>
+                    <h3>Boost Profitability</h3>
+                    <p>Boost profitability by optimizing operational costs and reducing waste through smart inventory management.</p>
+                    <div class="card-glow-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Why We Exist" -->
+    <section id="about" class="section why-we-exist">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why We Exist</h2>
+                <p class="section-subtitle">FoodWIZZ empowers small restaurants and food trucks with smart inventory tools and expert guidance to reduce waste, control costs, and simplify food management.</p>
+            </div>
+
+            <!-- Cuadrícula de misión y visión -->
+            <div class="mission-vision-grid">
+                <div class="mission-card floating-card">
+                    <div class="card-header">
+                        <div class="card-emoji">🎯</div>
+                        <h3>Our Mission</h3>
+                    </div>
+                    <p>We empower small and medium-sized businesses by providing them with innovative, easy-to-access and highly secure inventory software, thus boosting their efficiency and development and stimulating their performance and progress.</p>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <div class="vision-card floating-card">
+                    <div class="card-header">
+                        <div class="card-emoji">👁️</div>
+                        <h3>Our Vision</h3>
+                    </div>
+                    <p>We strive to be the leading and preferred firm for businesses to improve their inventory management, maximizing their sales through state-of-the-art IT solutions and expert consulting.</p>
+                    <div class="card-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Our Software" -->
+    <section id="software" class="section software-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">💻 Our Software</h2>
+                <p class="section-subtitle">Your best ally for quickly and fully automatically recording the entry and exit of products in your restaurant.</p>
+            </div>
+
+            <!-- Características del software -->
+            <div class="software-features">
+                <div class="software-card rotating-card">
+                    <div class="card-front">
+                        <div class="software-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>📊 Charts and Analytics</h3>
+                        <p>Advanced reporting system</p>
+                    </div>
+                    <div class="card-back">
+                        <p>They show product consumption, the most commonly used supplies, weekly or monthly comparisons, and visual alerts about possible excesses or shortages in inventory.</p>
+                    </div>
+                </div>
+
+                <div class="software-card rotating-card">
+                    <div class="card-front">
+                        <div class="software-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3>📦 Smart Stock</h3>
+                        <p>Intelligent inventory control</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Every time an order is generated in the system, the corresponding ingredients are automatically deducted from inventory through recipe linking.</p>
+                    </div>
+                </div>
+
+                <div class="software-card rotating-card">
+                    <div class="card-front">
+                        <div class="software-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3>☁️ Cloud Storage</h3>
+                        <p>Secure cloud infrastructure</p>
+                    </div>
+                    <div class="card-back">
+                        <p>All your inventory information is securely stored in the cloud, ensuring access from any device with automatic backup and protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de precios -->
+    <section class="section pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">💳 Pricing Plans</h2>
+                <p class="section-subtitle">Choose the perfect plan for your business needs</p>
+            </div>
+
+            <!-- Cuadrícula de precios -->
+            <div class="pricing-grid">
+                <div class="pricing-card basic-plan">
+                    <div class="plan-header">
+                        <h3>Basic Plan</h3>
+                        <div class="plan-price">$$</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Basic inventory tracking</li>
+                        <li><i class="fas fa-check"></i> Simple reporting</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li><i class="fas fa-check"></i> Up to 100 products</li>
+                        <li><i class="fas fa-check"></i> Mobile app access</li>
+                    </ul>
+                    <button class="plan-button">
+                        <span>BUY NOW</span>
+                        <div class="button-ripple"></div>
+                    </button>
+                </div>
+
+                <div class="pricing-card advanced-plan featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Advanced Plan</h3>
+                        <div class="plan-price">$$$</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                        <li><i class="fas fa-check"></i> Automated alerts</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Up to 500 products</li>
+                        <li><i class="fas fa-check"></i> Recipe management</li>
+                        <li><i class="fas fa-check"></i> Cloud backup</li>
+                    </ul>
+                    <button class="plan-button">
+                        <span>BUY NOW</span>
+                        <div class="button-ripple"></div>
+                    </button>
+                </div>
+
+                <div class="pricing-card premium-plan">
+                    <div class="plan-header">
+                        <h3>Premium Plan</h3>
+                        <div class="plan-price">$$$$</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Full feature access</li>
+                        <li><i class="fas fa-check"></i> Custom integrations</li>
+                        <li><i class="fas fa-check"></i> 24/7 phone support</li>
+                        <li><i class="fas fa-check"></i> Unlimited products</li>
+                        <li><i class="fas fa-check"></i> Multi-location support</li>
+                        <li><i class="fas fa-check"></i> Advanced reporting</li>
+                        <li><i class="fas fa-check"></i> API access</li>
+                    </ul>
+                    <button class="plan-button">
+                        <span>BUY NOW</span>
+                        <div class="button-ripple"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de preguntas frecuentes -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">❓ Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about FoodWIZZ</p>
+            </div>
+
+            <!-- Contenedor de preguntas frecuentes -->
+            <div class="faq-container">
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <div class="faq-question">
+                        <span>How do I add a new product to the inventory?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply navigate to the Products section in your dashboard, click "Add New Product," and fill in the required information including name, category, quantity, and expiration date. The system will automatically generate a unique product ID.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <div class="faq-question">
+                        <span>How do I search for a product in the inventory?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Use the search bar at the top of your inventory dashboard. You can search by product name, category, or product ID. The system also supports advanced filters for more specific searches.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <div class="faq-question">
+                        <span>How do I update the quantity of an existing product?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Click on the product you want to update, then click the "Edit" button. You can modify the quantity, update expiration dates, or change any other product details. Changes are saved automatically.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <div class="faq-question">
+                        <span>Can I generate an inventory report?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Go to the Reports section where you can generate various types of reports including inventory levels, consumption patterns, waste reports, and financial summaries. Reports can be exported as PDF or Excel files.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <div class="faq-question">
+                        <span>What do I do if I have a duplicate product?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The system automatically detects potential duplicates when adding new products. If you find duplicates, you can merge them using the "Merge Products" feature in the product management section.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients-say-section">
+        <h1>What our clients say!</h1>
+        <div class="line"></div>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/pepito.png" alt="Cliente">
+                    <p class="testimonial-text">“Our biggest challenge has been the time it takes to manually manage our inventory.”</p>
+                    <p class="client-name">— Don pepito Tasty</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/golazo.png" alt="Cliente">
+                    <p class="testimonial-text">“Counting supplies at the end of the day is tiring. An automated solution would be ideal for us.”</p>
+                    <p class="client-name">— El Golazo</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/leña.png" alt="Cliente">
+                    <p class="testimonial-text">“We have a hard time monitoring inventory in real time. Your app would solve that.”</p>
+                    <p class="client-name">— Leña y Humo</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/pizzeria.png" alt="Cliente">
+                    <p class="testimonial-text">“Shrinkage is a problem. With an app, we could better detect losses.”</p>
+                    <p class="client-name">— Vieni Quá</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/ohtoro.png" alt="Cliente">
+                    <p class="testimonial-text">“Manual counting seems easy, but it often results in mistakes. We need a more accurate and efficient way to manage it.”</p>
+                    <p class="client-name">— Oh-Toro</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/marcos.png" alt="Cliente">
+                    <p class="testimonial-text">“Some of our employees are not very tech-savvy, but we need an easy solution that everyone can use to improve inventory control.”</p>
+                    <p class="client-name">— Marcos Coffee and Cream</p>
+                </div>
+
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/pepito.png" alt="Cliente">
+                    <p class="testimonial-text">“Our biggest challenge has been the time it takes to manually manage our inventory.”</p>
+                    <p class="client-name">— Don pepito Tasty</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/golazo.png" alt="Cliente">
+                    <p class="testimonial-text">“Counting supplies at the end of the day is tiring. An automated solution would be ideal for us.”</p>
+                    <p class="client-name">— El Golazo</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/leña.png" alt="Cliente">
+                    <p class="testimonial-text">“We have a hard time monitoring inventory in real time. Your app would solve that.”</p>
+                    <p class="client-name">— Leña y Humo</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/pepito.png" alt="Cliente">
+                    <p class="testimonial-text">“Shrinkage is a problem. With an app, we could better detect losses.”</p>
+                    <p class="client-name">— Vieni Quá</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/ohtoro.png" alt="Cliente">
+                    <p class="testimonial-text">“Manual counting seems easy, but it often results in mistakes. We need a more accurate and efficient way to manage it.”</p>
+                    <p class="client-name">— Oh-Toro</p>
+                </div>
+                <div class="box">
+                    <img src="/public/Imagenes/Rest/marcos.png" alt="Cliente">
+                    <p class="testimonial-text">“Some of our employees are not very tech-savvy, but we need an easy solution that everyone can use to improve inventory control.”</p>
+                    <p class="client-name">— Marcos Coffee and Cream</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📬 Contact Us</h2>
+                <p class="section-subtitle">Get in touch with our team to start your inventory management journey</p>
+            </div>
+
+            <!-- Contenido de contacto -->
+            <div class="contact-content">
+                <!-- Formulario de contacto -->
+                <form class="contact-form floating-form" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                            <div class="input-glow"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="input-glow"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="input-glow"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" required>
+                            <div class="input-glow"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Describe your Issue</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="input-glow"></div>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span>Submit</span>
+                        <i class="fas fa-paper-plane"></i>
+                        <div class="submit-glow"></div>
+                    </button>
+
+                    <p class="contact-note">We will contact you as soon as possible...</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sección de información de contacto -->
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Calle 12, Chorrera, Panamá, Panamá</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Food.wizz@mottach.superate.org.pa</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(+507) 6270-6753</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(+53) 234-345</span>
+                    </div>
+                </div>
+
+                <!-- Sección de redes sociales -->
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with FoodWIZZ</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                            <div class="social-glow"></div>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                            <div class="social-glow"></div>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <div class="social-glow"></div>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <div class="social-glow"></div>
+                        </a>
+                    </div>
+                    <p class="social-handle">@foodwizz_507</p>
+                </div>
+
+                <!-- Sección de enlaces rápidos -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#software">Software</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parte inferior del pie de página -->
+            <div class="footer-bottom">
+                <div class="footer-tagline">
+                    <span class="tagline-never">NEVER</span>
+                    <span class="tagline-run">RUN</span>
+                    <span class="tagline-out">OUT</span>
+                </div>
+                <p class="copyright">&copy; 2024 FoodWIZZ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
