@@ -256,7 +256,7 @@ body {
         transform: translateY(-1px);
     }
 
-    .signup-btn {
+    .signup-btn, .login-btn {
         background: var(--gradient-primary);
         color: var(--white) !important;
         box-shadow: var(--shadow-glow);
@@ -264,11 +264,8 @@ body {
         overflow: hidden;
     }
 
-    .signup-btn .nav-text {
-        color: var(--white);
-    }
 
-    .signup-glow {
+    .signup-glow, .login-glow {
         position: absolute;
         top: -50%;
         left: -50%;
@@ -279,11 +276,11 @@ body {
         transition: transform 0.6s ease;
     }
 
-    .signup-btn:hover .signup-glow {
+    .signup-btn:hover .signup-glow, .login-btn:hover .login-glow {
         transform: rotate(45deg) translateX(100%);
     }
 
-    .signup-btn:hover {
+    .signup-btn:hover, .login-btn:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 30px rgba(221, 170, 0, 0.5);
     }
