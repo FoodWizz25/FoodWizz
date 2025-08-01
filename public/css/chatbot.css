@@ -38,7 +38,7 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.25s ease;
-    z-index: 1000;
+    z-index: 10;
 }
 
 body.show-chatbot #chatbot-toggler {
@@ -62,9 +62,10 @@ body.show-chatbot #chatbot-toggler span:last-child {
 /* Chatbot Window */
 .chatbot-popup {
     position: fixed;
-    right: 35px;
-    bottom: 90px;
-    width: 420px;
+    right: 50px;
+    bottom: 60px;
+    height: 75%;
+    width: 25%;
     background: #fff;
     border-radius: 18px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
@@ -74,7 +75,7 @@ body.show-chatbot #chatbot-toggler span:last-child {
     pointer-events: none;
     transform-origin: bottom right;
     transition: all 0.2s ease-in-out;
-    z-index: 999;
+    z-index: 1;
 }
 
 body.show-chatbot .chatbot-popup {
@@ -100,7 +101,7 @@ body.show-chatbot .chatbot-popup {
 }
 
 .header-info .chatbot-logo {
-    background: #fff;
+    background-image: url('../assets/logos/logo_F.png');
     fill: #ff5722; /* Color naranja para el logo */
     padding: 6px;
     width: 38px;

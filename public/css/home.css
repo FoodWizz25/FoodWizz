@@ -2016,7 +2016,7 @@ body {
 
 /* Contenedor de los testimonios */
 .clients-say-section {
-    /*background-color: #fff;  Fondo negro/gris oscuro */
+    background-color: var(--cream-white);  /* Fondo blanco */
     color: var(--dark-navy);
     padding: 50px 20px;
     text-align: center;
