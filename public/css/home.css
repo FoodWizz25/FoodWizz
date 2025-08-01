@@ -323,15 +323,75 @@ body {
 }
 
 /* Contenedor de la información principal */
+
+.carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel-images {
+            display: flex;
+            width: 100%; /* 2 imágenes */
+            transition: transform 0.7s cubic-bezier(.77,0,.18,1);
+        }
+        .carousel-image {
+            min-width: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .carousel-image.active {
+            display: block;
+        }
+        .carousel-btn{
+            height: 5%;
+            border-radius: 100% !important;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            z-index: 2;
+            opacity: 0.7;
+        }
+        .carousel-btn.prev {
+            left: 10px;
+        }
+        .carousel-btn.next {
+            right: 10px;
+        }
+        .cta-btn {
+            position: absolute;
+            bottom: 5.5em;
+            right: 9em;
+            background: #ff8000;
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 40px;
+            padding: 22px 48px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            cursor: pointer;
+            font-family: 'Montserrat', Arial, sans-serif;
+            transition: background 0.2s;
+        }
+        .cta-btn:hover {
+            
+            box-shadow:
+                0 4px 24px rgba(0,0,0,0.12),
+                0 0 50px 4px #ff9900; /* Glow más fuerte al pasar el mouse */
+        }
+
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--dark-navy) 0%, var(--teal-blue) 50%, var(--olive-green) 100%);
+    background: white;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
     padding-top: 80px;
-    top bottom: 200px;
+    
 }
 
 .hero-particles {
@@ -785,12 +845,35 @@ body {
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 1rem;
+
+    position: relative;
+    display: inline-block;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.section-title.bg-cream {
     background: var(--gradient-secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    position: relative;
-    display: inline-block;
+}
+
+.section-title.bg-degrade {
+    color: var(--cream-white);
+}
+
+.section-subtitle.bg-cream {
+    color: var(--gray-dark);
+}
+
+.section-subtitle.bg-degrade {
+    color: var(--cream-white);
 }
 
 .title-decoration {
@@ -812,14 +895,7 @@ body {
         box-shadow: 0 0 20px rgba(221, 170, 0, 0.8);
     }
 }
-/*luci debe revisar aqui*/
-.section-subtitle {
-    font-size: 1.2rem;
-    color: var(--gray-dark);
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
+
 
 
 .what-we-offer {

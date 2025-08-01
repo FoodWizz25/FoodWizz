@@ -32,6 +32,71 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ===================================
+// CARRUSEL DEL HERO
+// ===================================
+const images = document.querySelectorAll('.carousel-image');
+const imagesContainer = document.querySelector('.carousel-images');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+let current = 0;
+const total = images.length;
+
+// Muestra la imagen con animación
+function showImage(index, animate = true) {
+    if (animate) {
+        imagesContainer.style.transition = 'transform 0.7s cubic-bezier(.77,0,.18,1)';
+    } else {
+        imagesContainer.style.transition = 'none';
+    }
+    imagesContainer.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// Botón anterior
+prevBtn.addEventListener('click', () => {
+    if (current === 0) {
+        showImage(total - 1, false);
+        setTimeout(() => {
+            current = total - 2;
+            showImage(current, true);
+        }, 20);
+    } else {
+        current = (current - 1 + total) % total;
+        showImage(current);
+    }
+});
+
+// Botón siguiente
+nextBtn.addEventListener('click', () => {
+    if (current === total - 2) {
+        showImage(current + 1, true);
+        setTimeout(() => {
+            showImage(0, false);
+            current = 0;
+        }, 700);
+    } else {
+        current = (current + 1) % total;
+        showImage(current);
+    }
+});
+
+// Auto avance
+setInterval(() => {
+    if (current === total - 2) {
+        showImage(current + 1, true);
+        setTimeout(() => {
+            showImage(0, false);
+            current = 0;
+        }, 700);
+    } else {
+        current = (current + 1) % total;
+        showImage(current);
+    }
+}, 5000);
+
+// Inicializa posición
+showImage(current);
+
+// ===================================
 // DESPLAZAMIENTO SUAVE
 // ===================================
 // Añade desplazamiento suave a todos los enlaces que comienzan con #

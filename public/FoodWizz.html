@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="css/home.css">
-    <link rel="shortcut icon" href="Imagenes/logos/IconoNaranja_Transp.svg" type="image/x-icon">
+    <!-- Importa Material Symbols para iconos del chatbot -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="css/chatbot.css">
+    <!-- Importa el favicon -->
+    <link rel="shortcut icon" href="assets/logos/IconoNaranja_Transp.svg" type="image/x-icon">
 </head>
 <body>
     <!-- Fondo animado con formas flotantes -->
@@ -34,7 +38,7 @@
             <!-- Contenedor del logo -->
             <div class="logo-container">
                 <div class="logo-3d">
-                    <img src="Imagenes/logos/logo_N.svg" alt="">
+                    <img src="assets/logos/logo_N.svg" alt="">
                     <div class="logo-glow"></div>
                 </div>
             </div>
@@ -78,7 +82,27 @@
 
     <!-- Sección Hero -->
     <section id="home" class="hero">
-        <span style="font-size: 100px; color: white; font-style: italic;">Espacio a editar</span>
+        <section class="caja-carrusel">
+            <div class="carousel">
+                <img src="assets/icon/flechaIzq.svg" class="carousel-btn prev alt="Anterior">
+                <div class="carousel-images">
+                    <div class="carousel-image">
+                        <img src="assets/img/home1.svg" alt="Imagen 1" style="width:100%;">
+                    </div>
+                    <div class="carousel-image" style="position: relative;">
+                        <img src="assets/img/home2.svg" alt="Imagen 2" style="width:100%;">
+                        <button class="cta-btn">Start your kitchen's <br> journey today.</button>
+                    </div>
+                    <!-- Clon de la primera imagen para el loop -->
+                    <div class="carousel-image">
+                        <img src="assets/img/home1.svg" alt="Imagen 1" style="width:100%;">
+                    </div>
+                </div>
+                <img src="assets/icon/flechaDer.svg" class="carousel-btn next" alt="Siguiente">
+            </div>
+        </section>
+    <!-- 
+        <span style="font-size: 100px; color: white; font-style: italic;">Espacio a editar</span> -->
         <!-- <div class="hero-particles">
             <div class="particle"></div>
             <div class="particle"></div>
@@ -189,12 +213,12 @@
     <section class="section what-we-offer">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
+                <h2 class="section-title bg-cream">
                     <span class="title-decoration"></span>
                     What We Offer
                     <span class="title-decoration"></span>
                 </h2>
-                <p class="section-subtitle">Transform your business with cutting-edge inventory solutions</p>
+                <p class="section-subtitle bg-cream">Transform your business with cutting-edge inventory solutions</p>
             </div>
 
             <!-- Cuadrícula de características -->
@@ -242,8 +266,8 @@
     <section class="section how-we-help">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">How We Help</h2>
-                <p class="section-subtitle">Empowering your business with intelligent solutions</p>
+                <h2 class="section-title bg-degrade">How We Help</h2>
+                <p class="section-subtitle bg-degrade">Empowering your business with intelligent solutions</p>
             </div>
 
             <!-- Cuadrícula de ayuda -->
@@ -285,8 +309,8 @@
     <section id="about" class="section why-we-exist">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Why We Exist</h2>
-                <p class="section-subtitle">FoodWIZZ empowers small restaurants and food trucks with smart inventory tools and expert guidance to reduce waste, control costs, and simplify food management.</p>
+                <h2 class="section-title bg-cream">Why We Exist</h2>
+                <p class="section-subtitle bg-cream">FoodWIZZ empowers small restaurants and food trucks with smart inventory tools and expert guidance to reduce waste, control costs, and simplify food management.</p>
             </div>
 
             <!-- Cuadrícula de misión y visión -->
@@ -316,8 +340,8 @@
     <section id="software" class="section software-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">💻 Our Software</h2>
-                <p class="section-subtitle">Your best ally for quickly and fully automatically recording the entry and exit of products in your restaurant.</p>
+                <h2 class="section-title bg-degrade">💻 Our Software</h2>
+                <p class="section-subtitle bg-degrade">Your best ally for quickly and fully automatically recording the entry and exit of products in your restaurant.</p>
             </div>
 
             <!-- Características del software -->
@@ -368,8 +392,8 @@
     <section class="section pricing-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">💳 Pricing Plans</h2>
-                <p class="section-subtitle">Choose the perfect plan for your business needs</p>
+                <h2 class="section-title bg-cream">💳 Pricing Plans</h2>
+                <p class="section-subtitle bg-cream">Choose the perfect plan for your business needs</p>
             </div>
 
             <!-- Cuadrícula de precios -->
@@ -439,8 +463,8 @@
     <section class="section faq-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">❓ Frequently Asked Questions</h2>
-                <p class="section-subtitle">Find answers to common questions about FoodWIZZ</p>
+                <h2 class="section-title bg-degrade">❓ Frequently Asked Questions</h2>
+                <p class="section-subtitle bg-degrade">Find answers to common questions about FoodWIZZ</p>
             </div>
 
             <!-- Contenedor de preguntas frecuentes -->
@@ -509,68 +533,68 @@
     </section>
 
     <section class="clients-say-section">
-        <h1>What our clients say!</h1>
+        <h2 class="section-title bg-cream">What our clients say!</h2>
         <div class="line"></div>
         <div class="carousel-container">
             <div class="carousel-track">
                 <div class="box">
-                    <img src="Imagenes/Rest/pepito.png" alt="Cliente">
+                    <img src="assets/Rest/pepito.png" alt="Cliente">
                     <p class="testimonial-text">“Our biggest challenge has been the time it takes to manually manage our inventory.”</p>
                     <p class="client-name">— Don pepito Tasty</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/golazo.png" alt="Cliente">
+                    <img src="assets/Rest/golazo.png" alt="Cliente">
                     <p class="testimonial-text">“Counting supplies at the end of the day is tiring. An automated solution would be ideal for us.”</p>
                     <p class="client-name">— El Golazo</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/leña.png" alt="Cliente">
+                    <img src="assets/Rest/leña.png" alt="Cliente">
                     <p class="testimonial-text">“We have a hard time monitoring inventory in real time. Your app would solve that.”</p>
                     <p class="client-name">— Leña y Humo</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/pizzeria.png" alt="Cliente">
+                    <img src="assets/Rest/pizzeria.png" alt="Cliente">
                     <p class="testimonial-text">“Shrinkage is a problem. With an app, we could better detect losses.”</p>
                     <p class="client-name">— Vieni Quá</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/ohtoro.png" alt="Cliente">
+                    <img src="assets/Rest/ohtoro.png" alt="Cliente">
                     <p class="testimonial-text">“Manual counting seems easy, but it often results in mistakes. We need a more accurate and efficient way to manage it.”</p>
                     <p class="client-name">— Oh-Toro</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/marcos.png" alt="Cliente">
+                    <img src="assets/Rest/marcos.png" alt="Cliente">
                     <p class="testimonial-text">“Some of our employees are not very tech-savvy, but we need an easy solution that everyone can use to improve inventory control.”</p>
                     <p class="client-name">— Marcos Coffee and Cream</p>
                 </div>
 
                 <div class="box">
-                    <img src="/public/Imagenes/Rest/pepito.png" alt="Cliente">
+                    <img src="assets/Rest/pepito.png" alt="Cliente">
                     <p class="testimonial-text">“Our biggest challenge has been the time it takes to manually manage our inventory.”</p>
                     <p class="client-name">— Don pepito Tasty</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/golazo.png" alt="Cliente">
+                    <img src="assets/Rest/golazo.png" alt="Cliente">
                     <p class="testimonial-text">“Counting supplies at the end of the day is tiring. An automated solution would be ideal for us.”</p>
                     <p class="client-name">— El Golazo</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/leña.png" alt="Cliente">
+                    <img src="assets/Rest/leña.png" alt="Cliente">
                     <p class="testimonial-text">“We have a hard time monitoring inventory in real time. Your app would solve that.”</p>
                     <p class="client-name">— Leña y Humo</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/pepito.png" alt="Cliente">
+                    <img src="assets/Rest/pepito.png" alt="Cliente">
                     <p class="testimonial-text">“Shrinkage is a problem. With an app, we could better detect losses.”</p>
                     <p class="client-name">— Vieni Quá</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/ohtoro.png" alt="Cliente">
+                    <img src="assets/Rest/ohtoro.png" alt="Cliente">
                     <p class="testimonial-text">“Manual counting seems easy, but it often results in mistakes. We need a more accurate and efficient way to manage it.”</p>
                     <p class="client-name">— Oh-Toro</p>
                 </div>
                 <div class="box">
-                    <img src="Imagenes/Rest/marcos.png" alt="Cliente">
+                    <img src="assets/Rest/marcos.png" alt="Cliente">
                     <p class="testimonial-text">“Some of our employees are not very tech-savvy, but we need an easy solution that everyone can use to improve inventory control.”</p>
                     <p class="client-name">— Marcos Coffee and Cream</p>
                 </div>
@@ -582,8 +606,8 @@
     <section id="contact" class="section contact-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">📬 Contact Us</h2>
-                <p class="section-subtitle">Get in touch with our team to start your inventory management journey</p>
+                <h2 class="section-title bg-degrade">📬 Contact Us</h2>
+                <p class="section-subtitle bg-degrade">Get in touch with our team to start your inventory management journey</p>
             </div>
 
             <!-- Contenido de contacto -->
@@ -710,7 +734,23 @@
         </div>
     </footer>
 
+    <div id="chatbot-container"></div>
+    <!-- Aquí se cargará el chatbot que está en chatbot.html -->
+    <script>
+        fetch('Pages/chatbot.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('chatbot-container').innerHTML = html;
+            // Si tu JS necesita inicialización
+            if (typeof initChatbot === 'function') {
+                initChatbot();
+            }
+        });
+    </script>
     <!-- Enlace al archivo JavaScript externo -->
-    <script src="script.js"></script>
+    <script src="js/home.js"></script>
+    <!-- Emoji Mart -->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
 </html>
