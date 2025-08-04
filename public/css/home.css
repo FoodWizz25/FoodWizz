@@ -58,7 +58,7 @@ body {
     background: var(--cream-white);
 }
 
-
+/*Fondo animado con formas flotantes*/
 .animated-bg {
     position: fixed;
     top: 0;
@@ -136,7 +136,7 @@ body {
     }
 }
 
-
+/*Barra de navegación*/
 .navbar {
     position: fixed;
     top: 0;
@@ -320,7 +320,6 @@ body {
 }
 
 /* Contenedor de la información principal */
-
 .carousel {
             position: relative;
             width: 100%;
