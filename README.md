@@ -3,6 +3,7 @@
 **FoodWizz** es una página web enfocada en la gestión y experiencia de pedidos para foodtrucks y pequeños negocios. Actualmente incluye una interfaz moderna de **Login** y **Sign Up**, y se están integrando módulos adicionales como gestión de inventario, control de pedidos y panel administrativo.
 
 > 🔗 **Demo**: Puedes ver la versión en vivo aquí: [FoodWizz - Vista en vivo](https://foodwizz25.github.io/FoodWizz/public/FoodWizz.html)
+> 
 > 🖼️ **Capturas**: *(agrega imágenes en `/docs` y enlázalas aquí)*
 
 ---
