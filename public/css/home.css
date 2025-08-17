@@ -467,7 +467,7 @@ body {
 
 
 .how-we-help {
-    background: linear-gradient(135deg, var(--teal-blue) 0%, var(--olive-green) 100%);
+     background: radial-gradient(circle at center, black, #ff8000 750%);
     color: var(--white);
 }
 /* Asegurar que el título y subtítulo estén centrados */
@@ -484,13 +484,13 @@ body {
 .help-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
+    gap: 40px;
     margin-top: 3rem;
 }
 
 .help-card {
     position: relative;
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem;
     border-radius: 25px;
     text-align: center;
     transition: all var(--transition-medium);
@@ -498,37 +498,36 @@ body {
 }
 
 .glass-morphism {
-    background: rgba(254, 250, 224, 0.1);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(254, 250, 224, 0.2);
+    background: #ff8000; /* color sólido */
+    backdrop-filter: none; /* quitar efecto vidrio */
+    border: none;
+}
+
+.glass-morphism2 {
+    background: #ffffff; /* fondo blanco */
+    color: #000000 !important;
+    border: 1px solid rgba(0,0,0,0.1); /* opcional, para que destaque */
+}
+
+.glass-morphism2 h3,
+.glass-morphism2 p {
+    color: #000000 !important;
 }
 
 .help-card:hover {
     transform: translateY(-20px) rotateX(10deg) rotateY(5deg);
 }
 
-.help-number {
-    position: absolute;
-    top: -15px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: var(--gradient-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--white);
-    box-shadow: var(--shadow-medium);
-}
 
 .help-icon {
-    font-size: 3.5rem;
-    color: var(--golden-yellow);
+    font-size: 3rem;
+    color: var(--white);
     margin-bottom: 1.5rem;
     transition: all var(--transition-fast);
+}
+
+.glass-morphism2 .help-icon {
+    color: var(--vibrant-orange);
 }
 
 .help-card:hover .help-icon {
@@ -536,7 +535,7 @@ body {
 }
 
 .help-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--cream-white);
@@ -544,8 +543,10 @@ body {
 
 .help-card p {
     color: rgba(254, 250, 224, 0.9);
-    line-height: 1.8;
-    font-size: 1.1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 12px;
 }
 
 .card-glow-effect {
