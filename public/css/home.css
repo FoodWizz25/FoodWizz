@@ -470,7 +470,17 @@ body {
     background: linear-gradient(135deg, var(--teal-blue) 0%, var(--olive-green) 100%);
     color: var(--white);
 }
+/* Asegurar que el título y subtítulo estén centrados */
+.how-we-help .section-header .section-title {
+    display: block;      
+    text-align: center;
+    color: #ffffff; 
+}
 
+.how-we-help .section-header .section-subtitle {
+    text-align: center;   
+    margin: 0 auto;       
+}
 .help-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
