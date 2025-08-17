@@ -358,20 +358,21 @@ body {
         }
         .cta-btn {
             position: absolute;
-            bottom: 5.5em;
-            right: 9em;
+            bottom: 6.0em;
+            right: 355px;
             background: #ff8000;
             color: #fff;
-            font-size: 1.6rem;
+            font-size: 22px;
             font-weight: 700;
             border: none;
-            border-radius: 40px;
-            padding: 22px 48px;
+            border-radius: 25px;
+            padding: 22px 35px;
             box-shadow: 0 4px 16px rgba(0,0,0,0.08);
             cursor: pointer;
             font-family: 'Montserrat', Arial, sans-serif;
             transition: background 0.2s;
         }
+        
         .cta-btn:hover {
             
             box-shadow:
