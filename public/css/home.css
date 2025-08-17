@@ -1,10 +1,10 @@
 :root {
     
-    --golden-yellow: #DDAA00;
-    --teal-blue: #DD7F0D;
-    --dark-navy: #173F4E;
-    --cream-white: #FEFAE0;
-    --olive-green: #173F4E;
+    --golden-yellow:#FF7F0D;;
+    --teal-blue: #000000;
+    --dark-navy: #000000;
+    --cream-white: #fcfcfc;
+    --olive-green: #FF7F0D;
     --vibrant-orange: #FF7F0D;
     
     
@@ -12,7 +12,7 @@
     --black: #000000;
     --gray-light: #F5F5F5;
     --gray-dark: #333333;
-    
+     
     
     --gradient-primary: linear-gradient(135deg, var(--golden-yellow), var(--vibrant-orange));
     --gradient-secondary: linear-gradient(135deg, var(--teal-blue), var(--dark-navy));
@@ -141,7 +141,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(254, 250, 224, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(221, 170, 0, 0.2);
     z-index: 1000;
@@ -150,7 +150,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgba(254, 250, 224, 0.98);
+    background: rgba(255, 255, 255, 0.95);
     box-shadow: var(--shadow-medium);
     padding: 0.3rem 0;
 }
@@ -232,37 +232,61 @@ body {
         position: relative;
         z-index: 2;
     }
+    .nav-link:focus,
+.nav-link:active {
+    outline: none;
+    box-shadow: none;
+}
+.nav-link:focus,
+.nav-link:active,
+.nav-link:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+/* Hover en links normales */
+.nav-hover-effect {
+    position: absolute;
+    bottom: 4px; /* mientras más grande, más cerca del texto (prueba con 2px o incluso 0) */
+    left: 50%; 
+    transform: translateX(-50%) scaleX(0);
+    height: 3px; /* grosor de la línea */
+    width: 60%;  /* largo de la línea, ajusta según tu gusto */
+    background: #ff8000; /* naranja sólido */
+    transform-origin: center;
+    transition: transform var(--transition-fast);
+    z-index: 1;
+}
 
-    .nav-hover-effect {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--gradient-primary);
-        border-radius: 25px;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform var(--transition-fast);
-        z-index: 1;
+/* Efecto al hacer hover */
+.nav-link:hover .nav-hover-effect {
+    transform: translateX(-50%) scaleX(1);
+}
+
+
+/* Texto en hover (solo para login y signup) */
+.nav-link:hover .nav-text {
+    color: var(--vibrant-orange); 
+}
+
+    .login-btn {
+        background: white;
+        color: var(--black) !important;
+        box-shadow: var(--shadow-glow);
+        position: relative;
+        overflow: hidden;
     }
 
-    .nav-link:hover .nav-hover-effect {
-        transform: scaleX(1);
-    }
-
-    .nav-link:hover .nav-text {
-        color: var(--white);
-        transform: translateY(-1px);
-    }
-
-    .signup-btn, .login-btn {
+    
+    .signup-btn{
         background: var(--gradient-primary);
         color: var(--white) !important;
         box-shadow: var(--shadow-glow);
         position: relative;
         overflow: hidden;
     }
+    
+    .login-btn:hover .nav-text {
+    color: var(--black) !important;}
 
 
     .signup-glow, .login-glow {
@@ -284,6 +308,13 @@ body {
         transform: translateY(-3px);
         box-shadow: 0 10px 30px rgba(221, 170, 0, 0.5);
     }
+    .nav-link,
+.nav-link:focus,
+.nav-link:active,
+.nav-link:focus-visible {
+    outline: none !important;
+   }
+
 
 .mobile-menu {
     display: none;
@@ -358,8 +389,8 @@ body {
         }
         .cta-btn {
             position: absolute;
-            bottom: 6.0em;
-            right: 355px;
+            bottom: 5.7em;
+            right: 280px;
             background: #ff8000;
             color: #fff;
             font-size: 22px;
@@ -372,12 +403,12 @@ body {
             font-family: 'Montserrat', Arial, sans-serif;
             transition: background 0.2s;
         }
-        
+
         .cta-btn:hover {
             
             box-shadow:
                 0 4px 24px rgba(0,0,0,0.12),
-                0 0 50px 4px #ff9900; /* Glow más fuerte al pasar el mouse */
+                
         }
 
 .hero {
