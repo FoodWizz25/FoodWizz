@@ -58,84 +58,6 @@ body {
     background: var(--cream-white);
 }
 
-/*Fondo animado con formas flotantes*/
-.animated-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.floating-shape {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.1;
-    animation: floatShape 20s infinite ease-in-out;
-}
-
-.shape-1 {
-    width: 100px;
-    height: 100px;
-    background: var(--gradient-primary);
-    top: 10%;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.shape-2 {
-    width: 150px;
-    height: 150px;
-    background: var(--gradient-secondary);
-    top: 60%;
-    right: 10%;
-    animation-delay: 5s;
-}
-
-.shape-3 {
-    width: 80px;
-    height: 80px;
-    background: var(--gradient-accent);
-    bottom: 20%;
-    left: 20%;
-    animation-delay: 10s;
-}
-
-.shape-4 {
-    width: 120px;
-    height: 120px;
-    background: var(--gradient-primary);
-    top: 30%;
-    right: 30%;
-    animation-delay: 15s;
-}
-
-.shape-5 {
-    width: 90px;
-    height: 90px;
-    background: var(--gradient-secondary);
-    bottom: 40%;
-    right: 50%;
-    animation-delay: 8s;
-}
-
-@keyframes floatShape {
-    0%, 100% {
-        transform: translateY(0px) rotate(0deg) scale(1);
-    }
-    25% {
-        transform: translateY(-30px) rotate(90deg) scale(1.1);
-    }
-    50% {
-        transform: translateY(-60px) rotate(180deg) scale(0.9);
-    }
-    75% {
-        transform: translateY(-30px) rotate(270deg) scale(1.1);
-    }
-}
-
 /*Barra de navegación*/
 .navbar {
     position: fixed;
@@ -143,7 +65,6 @@ body {
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(221, 170, 0, 0.2);
     z-index: 1000;
     transition: all var(--transition-fast);
     padding: 0.5rem 0;
@@ -237,12 +158,8 @@ body {
     outline: none;
     box-shadow: none;
 }
-.nav-link:focus,
-.nav-link:active,
-.nav-link:focus-visible {
-    outline: none;
-    box-shadow: none;
-}
+
+
 /* Hover en links normales */
 .nav-hover-effect {
     position: absolute;
@@ -268,87 +185,70 @@ body {
     color: var(--vibrant-orange); 
 }
 
-    .login-btn {
+.login-btn {
         background: white;
         color: var(--black) !important;
         box-shadow: var(--shadow-glow);
         position: relative;
         overflow: hidden;
-    }
+ }
 
     
-    .signup-btn{
-        background: var(--gradient-primary);
-        color: var(--white) !important;
-        box-shadow: var(--shadow-glow);
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .login-btn:hover .nav-text {
-    color: var(--black) !important;}
+ .signup-btn {
+    background: var(--vibrant-orange); /* o var(--gradient-primary) si quieres gradiente */
+    color: var(--white) !important;    /* texto blanco inicial */
+    box-shadow: var(--shadow-glow);
+    position: relative;
+    overflow: hidden;
+}
 
+/* Mantener estilo al presionar/focus */
+.signup-btn,
+.signup-btn:focus,
+.signup-btn:active,
+.signup-btn:focus-visible {
+    background: var(--vibrant-orange); 
+    color: #fff !important;            
+    outline: none !important;
+    box-shadow: var(--shadow-glow) !important;
+}
 
-    .signup-glow, .login-glow {
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-        transform: rotate(45deg) translateX(-100%);
-        transition: transform 0.6s ease;
-    }
+/* Hover que solo cambia el texto a blanco porque lso demás son naranjas*/
+.signup-btn:hover .nav-text {
+    color: #fff !important;
+}
 
-    .signup-btn:hover .signup-glow, .login-btn:hover .login-glow {
-        transform: rotate(45deg) translateX(100%);
-    }
+/* Hover general (glow y movimiento) */
+.signup-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(221, 170, 0, 0.5);
+}
 
-    .signup-btn:hover, .login-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 30px rgba(221, 170, 0, 0.5);
-    }
-    .nav-link,
+/* Glow del botón */
+.signup-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: rotate(45deg) translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+/* Animación del glow al hover */
+.signup-btn:hover .signup-glow {
+    transform: rotate(45deg) translateX(100%);
+}
+
+/* Para eliminar cualquier borde naranja de links*/
+.nav-link,
 .nav-link:focus,
 .nav-link:active,
 .nav-link:focus-visible {
     outline: none !important;
-   }
-
-
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 8px;
-    transition: all var(--transition-fast);
 }
 
-.hamburger-line {
-    width: 25px;
-    height: 3px;
-    background: var(--dark-navy);
-    margin: 3px 0;
-    transition: all var(--transition-fast);
-    border-radius: 2px;
-}
-
-.mobile-menu:hover {
-    background: rgba(221, 170, 0, 0.1);
-}
-
-.mobile-menu.active .hamburger-line:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
-}
-
-.mobile-menu.active .hamburger-line:nth-child(2) {
-    opacity: 0;
-}
-
-.mobile-menu.active .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
 
 /* Contenedor de la información principal */
 .carousel {
@@ -495,7 +395,7 @@ body {
 
 
 .what-we-offer {
-    background: var(--cream-white);
+    background: linear-gradient(to bottom, #FFFFFF, #f0e7e7, #AFAAAA); 
 }
 
 .features-grid {
