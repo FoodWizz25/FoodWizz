@@ -526,6 +526,10 @@ body {
     transition: all var(--transition-fast);
 }
 
+.infiltrado{
+    margin-bottom: -20px;
+}
+
 .glass-morphism2 .help-icon {
     color: var(--vibrant-orange);
 }
@@ -568,9 +572,13 @@ body {
 
 
 .why-we-exist {
-    background: var(--cream-white);
+    background: linear-gradient(to bottom, #FFFFFF, #f0e7e7, #AFAAAA); 
 }
-
+.why-we-exist .section-subtitle {
+    max-width: 100% !important; 
+    text-align: left;        
+    margin: 0 auto;             
+}
 .mission-vision-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
