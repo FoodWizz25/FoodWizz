@@ -28,7 +28,7 @@ body {
     right: 30px;
     width: 60px;
     height: 60px;
-    background: #ff5722; /* Color naranja para el botón */
+    background: #ff8000; /* Color naranja para el botón */
     color: white;
     border: none;
     border-radius: 50%;
@@ -86,7 +86,7 @@ body.show-chatbot .chatbot-popup {
 
 /* Chat Header */
 .chat-header {
-    background: #ff5722; /* Color naranja para el encabezado */
+    background: #ff8000; /* Color naranja para el encabezado */
     padding: 16px 22px;
     display: flex;
     justify-content: space-between;
@@ -102,7 +102,7 @@ body.show-chatbot .chatbot-popup {
 
 .header-info .chatbot-logo {
     background-image: url('../assets/logos/logo_F.png');
-    fill: #ff5722; /* Color naranja para el logo */
+    fill: #ff8000; /* Color naranja para el logo */
     padding: 6px;
     width: 38px;
     height: 38px;
@@ -146,7 +146,7 @@ body.show-chatbot .chatbot-popup {
 }
 
 .bot-message .bot-avatar {
-    background: #ff5722; /* Color naranja para el avatar del bot */
+    background: #ff8000; /* Color naranja para el avatar del bot */
     fill: #fff;
     padding: 6px;
     width: 34px;
@@ -169,7 +169,7 @@ body.show-chatbot .chatbot-popup {
 }
 
 .user-message .message-text {
-    background: #ff5722; /* Color naranja para los mensajes del usuario */
+    background: #ff8000; /* Color naranja para los mensajes del usuario */
     color: #fff;
     border-radius: 14px 14px 4px 14px;
 }
@@ -253,7 +253,7 @@ body.show-chatbot .chatbot-popup {
     height: 36px;
     border-radius: 50%;
     cursor: pointer;
-    color: #ff5722; /* Color de los botones de control */
+    color: #ff8000; /* Color de los botones de control */
     transition: background 0.2s ease;
 }
 
@@ -262,13 +262,13 @@ body.show-chatbot .chatbot-popup {
 }
 
 #send-message {
-    background: #ff5722; /* Color naranja para el botón de enviar */
+    background: #ff8000; /* Color naranja para el botón de enviar */
     color: white;
     display: none;
 }
 
 #send-message:hover {
-    background: #e64a19; /* Color más oscuro al pasar el mouse */
+    background: #ff8000; /* Color más oscuro al pasar el mouse */
 }
 
 .message-input:valid ~ .chat-controls #send-message {

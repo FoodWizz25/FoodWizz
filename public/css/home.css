@@ -1254,7 +1254,7 @@ body {
 }
 
 .tagline-out {
-    color: var(--teal-blue);
+    color: var(--vibrant-orange);
     animation: taglineGlow 3s ease-in-out infinite 2s;
 }
 
