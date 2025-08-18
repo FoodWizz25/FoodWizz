@@ -1,0 +1,131 @@
+/* FAQ Page Styles - Sección de Preguntas Frecuentes */
+
+/* Variables CSS esenciales */
+:root {
+    --vibrant-orange: #FF7F0D;
+    --cream-white: #fcfcfc;
+    --gray-dark: #333333;
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.15);
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s ease;
+}
+
+/* Sección de Preguntas Frecuentes */
+.faq-section {
+    background: var(--cream-white);
+    padding: 5rem 0;
+}
+
+.faq-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 3rem;
+}
+
+/* Acordeón */
+.faq-accordion {
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+}
+
+.faq-accordion .accordion-item {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    background: transparent;
+}
+
+.faq-accordion .accordion-item:last-child {
+    border-bottom: none;
+}
+
+.faq-accordion .accordion-button {
+    background: white;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gray-dark);
+    text-align: left;
+    transition: all var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-accordion .accordion-button:hover {
+    background: #f8f9fa;
+    color: var(--vibrant-orange);
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+    background: var(--vibrant-orange);
+    color: white;
+    box-shadow: 0 8px 25px rgba(255, 127, 13, 0.4);
+}
+
+.faq-accordion .accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.faq-accordion .accordion-button::after {
+    display: none;
+}
+
+.faq-accordion .accordion-body {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    color: var(--gray-dark);
+    line-height: 1.7;
+}
+
+/* Isotipo en botones */
+.faq-icon-small {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* Imagen */
+.faq-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.faq-image .customer-service-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-medium);
+    transition: transform var(--transition-medium);
+    object-fit: contain;
+}
+
+.faq-image .customer-service-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .faq-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .faq-accordion .accordion-button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .faq-accordion .accordion-body {
+        padding: 1rem;
+    }
+}
