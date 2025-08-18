@@ -675,7 +675,7 @@ body {
 .software-features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
+    gap: 40px;
     margin-top: 3rem;
 }
 
@@ -685,26 +685,14 @@ body {
     cursor: pointer;
 }
 
-.rotating-card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
 
-.software-card:hover .rotating-card {
-    transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
+.card-front {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     border-radius: 25px;
-    padding: 2.5rem;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -712,15 +700,8 @@ body {
     text-align: center;
 }
 
-.card-front {
-    background: rgba(254, 250, 224, 0.1);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(254, 250, 224, 0.2);
-}
-
-.card-back {
-    background: var(--gradient-primary);
-    transform: rotateY(180deg);
+.card-front{
+    background-color: #FF7F0D;
 }
 
 .software-features{ /*luci estuvo aqui*/
@@ -729,7 +710,7 @@ body {
 
 .software-icon {
     font-size: 4rem;
-    color: var(--golden-yellow);
+    color: var(--white);
     margin-bottom: 1.5rem;
     transition: all var(--transition-fast);
 }
@@ -739,24 +720,34 @@ body {
 }
 
 .card-front h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--cream-white);
+    text-align: justify;
+    margin: 12px;
 }
 
 .card-front p {
     color: rgba(254, 250, 224, 0.8);
-    font-size: 1.1rem;
-}
-
-.card-back p {
-    color: var(--white);
-    line-height: 1.8;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 
+.middle-card .software-icon {
+    color: #FF7F0D; /* Naranja */
+}
+.middle-card .card-front {
+    background-color: white; /* Fondo blanco solo para la carta del medio */
+}
+
+.middle-card .card-front h3 {
+    color: #000000; /* Opcional: cambiar el color del título para que contraste */
+}
+
+.middle-card .card-front p {
+    color: #000000 !important; 
+}
 .pricing-section {
     background: var(--cream-white);
 }
@@ -814,6 +805,7 @@ body {
     font-weight: 700;
     color: var(--dark-navy);
     margin-bottom: 1rem;
+
 }
 
 .plan-price {
